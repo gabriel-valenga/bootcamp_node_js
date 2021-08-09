@@ -1,0 +1,44 @@
+html {
+  font-size: 18px;
+  font-family: Arial;
+}
+
+ul.listaBonita > li {
+  list-style: none;
+  border-width: 2px;
+  border-color: #a0a0a0;
+  border-left-style: solid;
+  border-right-style: solid;
+  padding: 4px 8px;
+  border-radius: 3px;
+}
+
+ul.listaBonita {
+  color: #353535;
+}
+
+ul.listaBonita > li:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+}
+
+ul.listaBonita > li:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+}
+
+ul.listaBonita > li.selecionado {
+  background-color: #00bbee;
+  border-color: #2e79db;
+  border-bottom-style: solid;
+}
+
+ul.listaBonita > li:hover:not(.selecionado) {
+  background-color: #ff0000;
+}
+
+ul.listaBonita > li:not(.selecionado) + li {
+  border-top-style: solid;
+}

@@ -1,0 +1,125 @@
+.logo {
+  width: 150px;
+  margin: -4px 8px 0 8px;
+  height: 30px;
+  background-image: url(sprites.svg);
+  background-position: 0 -500px;
+}
+
+#placeholder-content {
+  height: 800px;
+}
+
+#placeholder-footer {
+  height: 100px;
+}
+
+html {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+header {
+  background-color: rgb(250,251,251);
+  border-top: 3px solid rgb(244,128,36);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px, rgba(0, 0, 0, 0.05) 0px 1px 4px 0px,
+    rgba(0, 0, 0, 0.05) 0px 2px 8px 0px;
+  position: fixed;
+  top: 0;
+  width: 100%;  
+}
+
+nav a.current {
+  background-color: #EFF0F1;
+  color: rgb(12,13,14);
+  text-decoration: none;
+  border-right: 3px solid rgb(244,128,36);
+  font-weight: 700;
+  display: block;
+  line-height: 31px;
+  padding-left: 8px;
+}
+
+h1 {
+  font-size: 27px;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.panel {
+  border: 1px solid rgb(214,217,220);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px, rgba(0, 0, 0, 0.05) 0px 1px 4px 0px,
+  rgba(0, 0, 0, 0.05) 0px 2px 8px 0px;
+  margin-bottom: 16px;
+  width: 298px;
+  border-radius: 3px;
+}
+
+.panel > h2 {
+  background-color: #fafafb;
+  margin: 0;
+  padding: 12px 15px;
+  color: rgb(83,90,96);
+  font-size: 15px;
+  font-weight: 400;
+  border-bottom: 1px solid rgb(214,217,220);
+}
+
+.panel > div {
+  padding: 12px 15px;
+}
+
+footer {
+  background-color: rgb(36,39,41);
+  color: rgb(106,115,124);
+}
+
+body {
+  margin: 0;
+}
+
+.header-inner {
+  height: 47px;
+  display: flex;
+  align-items: center;
+}
+
+.header-inner,.middle-area,.footer-area {
+  max-width: 1264px;
+  margin: auto;
+}
+
+.middle-area {
+  margin-top: 50px;
+}
+
+.middle-area, .content-area {
+  display: flex;
+  flex-direction: row;
+}
+
+.content-area {
+  padding: 24px;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+  border-left: 1px solid #d6d9dc;
+  justify-content: center;
+}
+
+main {
+  flex: 1 1 450px;
+}
+
+nav {
+  position: sticky;
+  top: 74px;
+  width: 164px;
+}
+
+.nav-area {
+  padding-top: 24px;
+}
+
+.footer-area {
+  padding: 24px;
+}  
